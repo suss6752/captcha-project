@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo1-removebg-preview (1).png" alt="Логотип"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                    <li><button><a href="index.html">Головна</a></button></li>
+                    <li><button><a href="./page01.html">Історія</a></button></li>
+                    <li><button><a href="./page02.html">Види капч</a></button></li>
+                    <li><button><a href="./page03.html">Цікаві факти</a></button></li>
+                    <!-- From Uiverse.io by Type-Delta --> 
+                    <label
+                    for="themeToggle"
+                    class="themeToggle st-sunMoonThemeToggleBtn"
+                    type="checkbox"
+                    >
+                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        stroke="none"
+                    >
+                        <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                        </mask>
+                        <circle
+                        class="sunMoon"
+                        cx="10"
+                        cy="10"
+                        r="8"
+                        mask="url(#moon-mask)"
+                        ></circle>
+                        <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                        </g>
+                    </svg>
+                    </label>
+
+                </ul>
+        </nav>
+</header>
+
+    <!--
+    <div class="mobile-menu">
+        <ul class="glmenu">
+            <li><a class="glmenu_items" href="index.html">Головна</a></li>
+            <li><a class="glmenu_items" href="page01.html">Історія</a></li>
+            <li><a class="glmenu_items" href="page02.html">Види капч</a></li>
+            <li><a class="glmenu_items" href="page03.html">Цікаві факти</a></li>
+        </ul>
+    </div>
+    -->
+<div class="container">
+        <section class="inner-hero">
+        <div class="hero-overlay">
+            <nav class="inner-breadcrumbs">
+                <a href="index.html">Головна</a> / <span>Цікаві факти</span>
+            </nav>
+            <h1 class="inner-hero-title">CAPTCHA: Більше, ніж просто перевірка на бота.</h1>
+            <div class="mini-info-bar">
+                <div id="live-clock" class="mini-clock"></div>
+                <div class="reading-time">⏱ 7 хв читання</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="facts-landing">
+    <div class="fact-section">
+        <h2 class="fact-title">01. Найбільша неоплачувана праця в історії</h2>
+        <p class="fact-text">
+            Щоразу, коли ви відмічаєте на екрані світлофори, пішохідні переходи або гідранти, ви не просто підтверджуєте свою "людяність". Насправді ви виконуєте роль безкоштовного вчителя для штучного інтелекту компанії Google. reCAPTCHA використовує величезні людські ресурси для маркування об'єктів у реальному світі, які алгоритми все ще не можуть розпізнати самостійно. 
+        </p>
+        <p class="fact-text">
+            Ці дані потім використовуються для навчання систем автопілота в безпілотних автомобілях (наприклад, Waymo). Таким чином, мільярди людей по всьому світу щодня допомагають технологічним гігантам вдосконалювати їхні продукти, витрачаючи на це свій час абсолютно безкоштовно.
+        </p>
+        <p class="highlight-info">
+            За статистикою, люди розгадують близько 200 мільйонів капч щодня. Це еквівалентно 500 000 годин чистої праці, яка щоденно "дарується" на розвиток нейромереж.
+        </p>
+    </div>
+
+    <div class="fact-section">
+        <h2 class="fact-title">02. Боти розгадують капчу краще за людей</h2>
+        <p class="fact-text">
+            Це звучить як парадокс, але сучасні алгоритми на основі глибокого навчання вже давно перевершили людей у традиційних завданнях CAPTCHA. Нейромережі здатні розпізнавати навіть найбільш викривлений текст або зашумлені цифри з точністю понад 99.8%. 
+        </p>
+        <p class="fact-text">
+            Для порівняння, середня точність людини у тих же завданнях складає лише близько 91%. Ми часто помиляємося через втому, погане освітлення екрана або просто неуважність. Саме тому текстові перевірки стають історією: вони стали занадто складними для людей і занадто легкими для сучасних ботів.
+        </p>
+        
+    </div>
+
+    <div class="fact-section">
+        <h2 class="fact-title">03. Парадокс «невидимої» перевірки</h2>
+        <p class="fact-text">
+            Нове покоління захисту — reCAPTCHA v3 — працює абсолютно непомітно для користувача. Замість того, щоб змушувати вас клікати на картинки, система аналізує вашу поведінку у фоновому режимі. Вона оцінює, як ви рухаєте курсором миші, як швидко ви прокручуєте сторінку та навіть те, як ви натискаєте на клавіші.
+        </p>
+        <p class="fact-text">
+            Система присвоює вашій сесії оцінку від 0.0 (ймовірний бот) до 1.0 (гарантована людина). Якщо ваш рух занадто ідеальний і лінійний — система заблокує вас. Якщо ж ви рухаєтеся хаотично, робите паузи або використовуєте звичні кукі браузера — ви пройдете перевірку, навіть не помітивши її існування.
+        </p>
+        
+    </div>
+
+    <div class="fact-section">
+        <h2 class="fact-title">04. Темна сторона: Капча-ферми</h2>
+        <p class="fact-text">
+            Поки інженери розробляють складні алгоритми, існує "аналоговий" спосіб зламу будь-якого захисту. Це капча-ферми — сервіси, де тисячі людей у бідних країнах отримують мізерну платню за те, що розгадують капчі в реальному часі за ботів. 
+        </p>
+        <p class="fact-text">
+            Коли бот зустрічає на сайті перешкоду, він миттєво відправляє скріншот на таку ферму. Там людина за частку секунди вводить відповідь, і бот продовжує свою роботу. Це створює величезний тіньовий ринок, де людський інтелект продається за копійки, щоб допомогти спамерам та хакерам обходити найсучасніші системи безпеки.
+        </p>
+        <p class="highlight-info">
+            Ціна за 1000 розгаданих капч на чорному ринку стартує від $0.50. Це робить такий вид автоматизованого зламу доступним практично для будь-кого.
+        </p>
+    </div>
+
+    <div class="fact-section">
+        <h2 class="fact-title">05. Походження назви та тест Тюрінга</h2>
+        <p class="fact-text">
+            Назва CAPTCHA — це не просто слово, а складна наукова абревіатура. Вона розшифровується як "Completely Automated Public Turing test to tell Computers and Humans Apart". Це фактично повністю автоматизований тест Тюрінга, де суддею виступає не людина, а сама машина.
+        </p>
+        <p class="fact-text">
+            Ідея полягає в тому, що комп'ютер генерує завдання, яке він сам не вміє розв'язувати, але відповідь на яке він може легко перевірити за наперед визначеним шаблоном. Це створює унікальний бар'єр, який протягом десятиліть був основною лінією оборони інтернету від автоматизованих атак.
+        </p>
+    </div>
+    </main>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Лабораторна робота про CAPTCHA</p>
+            <p><b><a href="./labs.html">Лабораторні роботи по JavaScript</a></b></p>
+            <p>Автор: <a href="https://sonya777.carrd.co/"><b>Ковтун Софія</b></a> | Група: 1ЕХКБ-25Б</p>
+        </div>
+    </footer>
+
+        <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

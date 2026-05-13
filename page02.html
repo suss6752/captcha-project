@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo1-removebg-preview (1).png" alt="Логотип"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                    <li><button><a href="index.html">Головна</a></button></li>
+                    <li><button><a href="./page01.html">Історія</a></button></li>
+                    <li><button><a href="./page02.html">Види капч</a></button></li>
+                    <li><button><a href="./page03.html">Цікаві факти</a></button></li>
+                    <!-- From Uiverse.io by Type-Delta --> 
+                    <label
+                    for="themeToggle"
+                    class="themeToggle st-sunMoonThemeToggleBtn"
+                    type="checkbox"
+                    >
+                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        stroke="none"
+                    >
+                        <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                        </mask>
+                        <circle
+                        class="sunMoon"
+                        cx="10"
+                        cy="10"
+                        r="8"
+                        mask="url(#moon-mask)"
+                        ></circle>
+                        <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                        </g>
+                    </svg>
+                    </label>
+
+                </ul>
+        </nav>
+</header>
+
+    <!--
+    <div class="mobile-menu">
+        <ul class="glmenu">
+            <li><a class="glmenu_items" href="index.html">Головна</a></li>
+            <li><a class="glmenu_items" href="page01.html">Історія</a></li>
+            <li><a class="glmenu_items" href="page02.html">Види капч</a></li>
+            <li><a class="glmenu_items" href="page03.html">Цікаві факти</a></li>
+        </ul>
+    </div>
+    -->
+<div class="container">
+        <section class="inner-hero">
+        <div class="hero-overlay">
+            <nav class="inner-breadcrumbs">
+                <a href="index.html">Головна</a> / <span>Види капч</span>
+            </nav>
+            <h1 class="inner-hero-title">Які існують види капчі: від тексту до поведінкового аналізу.</h1>
+            <div class="mini-info-bar">
+                <div id="live-clock" class="mini-clock"></div>
+                <div class="reading-time">⏱ 7 хв читання</div>
+            </div>
+        </div>
+    </section>
+
+        <main>
+        <p class="intro-text">
+            Технологія постійно еволюціонувала у відповідь на розвиток ботів. Перші концепції з'явилися у 1997-2000 роках, коли дослідники шукали спосіб відрізнити людину від програми за допомогою викривлених символів. Згодом методи стали складнішими: від розпізнавання об'єктів до аналізу рухів миші та використання біометрії.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="section-subtitle">Основні типи перевірок</h2>
+        <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon">⌨️</div>
+                    <h4>Classic</h4>
+                    <p>класичний варіант із буквами та цифрами у різноманітних розташуваннях (нахилені, перевернуті) на кольоровому або зашумленому тлі.</p>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-icon">➗</div>
+                    <h4>Math</h4>
+                    <p>виконання простої арифметичної дії (наприклад, розв'язання прикладу «12 + 5»).</p>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-icon">🖼️</div>
+                    <h4>Image</h4>
+                    <p>вибір зображень із конкретними об'єктами (велосипеди, гідранти). Google часто використовує для цього базу Google Street View, щоб одночасно навчати свої алгоритми.</p>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-icon">🧩</div>
+                    <h4>Slider</h4>
+                    <p>інтерактивний тест, де потрібно перетягнути повзунок або фрагмент пазла, щоб поєднати частини картинки.</p>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-icon">🎧</div>
+                    <h4>Audio</h4>
+                    <p>прослуховування аудіозапису з цифрами чи словами на тлі шумів. Важлива як альтернатива для людей із порушеннями зору.</p>
+                </div>
+
+                <div class="type-card special">
+                    <div class="type-icon">👻</div>
+                    <h4>Invisible v2/v3</h4>
+                    <p>популярний чекбокс «Я не робот», який за потреби активує додаткові графічні завдання./працює у фоновому режимі, присвоюючи користувачу бал на основі його поведінки на сайті (від 0.0 до 1.0).</p>
+                </div>
+        </div>
+
+        <p class="highlight-info">
+            Окремо виділяють приховані методи захисту, такі як <b>Honeypot CAPTCHA</b> — невидиме для людей поле у формі (якщо воно заповнене, це 100% бот) та <b>Time-based CAPTCHA</b>, що аналізує швидкість заповнення даних.
+        </p>
+
+        <hr class="section-divider">
+
+        <div class="table-wrapper">
+            <table class="styled-table">
+            <caption><h3>Детальна класифікація поколінь</h3></caption>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Приклад / Покоління</th>
+                <th>Переваги</th>
+                <th>Недоліки / Порада</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><b>Текстова</b></td>
+                <td>"5m2kP" (1-е)</td>
+                <td>Проста, дешева</td>
+                <td>AI обходить за 1с. Краще не використовувати самостійно.</td>
+            </tr>
+            <tr>
+                <td><b>Зображення</b></td>
+                <td>"Виберіть вітрини" (2-е)</td>
+                <td>Інтуїтивно зрозуміла</td>
+                <td>Утомлює, забирає багато часу. Підходить для форумів.</td>
+            </tr>
+            <tr>
+                <td><b>reCAPTCHA v3</b></td>
+                <td>Невидима (3-е)</td>
+                <td>Не дратує людей</td>
+                <td>Збирає дані. Оптимально для блогів.</td>
+            </tr>
+            <tr>
+                <td><b>hCaptcha</b></td>
+                <td>Слайдери (3-е)</td>
+                <td>Висока приватність</td>
+                <td>Платна для великих проектів. Краще для магазинів.</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <br>
+
+        <fieldset>
+            <legend align="center"><b>&nbsp; Майбутнє технологій &nbsp;</b></legend>
+            <p align="justify"><i>
+                Боти постійно вдосконалюються, що стимулює появу біометричної капчі (розпізнавання обличчя, голосу, відбитка пальця) та <b>Adaptive AI CAPTCHA</b>, яка створює унікальні завдання в реальному часі. 
+                У лютому 2025 року з'явилася <b>IllusionCAPTCHA</b>, що працює на основі візуальних ілюзій. Наприклад, людина бачить об'єкт у лісі завдяки інтуїції, тоді як ШІ сприймає це лише як випадковий набір дерев. Також система надає ботам фальшиві підказки, що ведуть до помилок.
+            </i></p>
+        </fieldset>
+        </main>
+</div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Лабораторна робота про CAPTCHA</p>
+            <p><b><a href="./labs.html">Лабораторні роботи по JavaScript</a></b></p>
+            <p>Автор: <a href="https://sonya777.carrd.co/"><b>Ковтун Софія</b></a> | Група: 1ЕХКБ-25Б</p>
+        </div>
+    </footer>
+
+        <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

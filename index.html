@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo1-removebg-preview (1).png" alt="Логотип"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                    <li><button><a href="index.html">Головна</a></button></li>
+                    <li><button><a href="./page01.html">Історія</a></button></li>
+                    <li><button><a href="./page02.html">Види капч</a></button></li>
+                    <li><button><a href="./page03.html">Цікаві факти</a></button></li>
+                    <!-- From Uiverse.io by Type-Delta --> 
+                    <label
+                    for="themeToggle"
+                    class="themeToggle st-sunMoonThemeToggleBtn"
+                    type="checkbox"
+                    >
+                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        stroke="none"
+                    >
+                        <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                        </mask>
+                        <circle
+                        class="sunMoon"
+                        cx="10"
+                        cy="10"
+                        r="8"
+                        mask="url(#moon-mask)"
+                        ></circle>
+                        <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                        </g>
+                    </svg>
+                    </label>
+
+                </ul>
+        </nav>
+</header>
+   <!--
+        <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+ 
+    <div class="mobile-menu">
+        <ul class="glmenu">
+            <li><a class="glmenu_items" href="index.html">Головна</a></li>
+            <li><a class="glmenu_items" href="page01.html">Історія</a></li>
+            <li><a class="glmenu_items" href="page02.html">Види капч</a></li>
+            <li><a class="glmenu_items" href="page03.html">Цікаві факти</a></li>
+        </ul>
+    </div>
+    -->
+<div class="container">
+    <main>
+        <h1 class="main-title">Що таке CAPTCHA та для чого вона потрібна</h1>
+    <div class="intro-section">
+        <div class="image-placeholder">
+                    <img src="./images/pic00.avif" alt="Приклад капчі">
+                </div>
+    <div class="text-content">
+        <h2>Чому ваш сайт запитує, чи ви людина?</h2>
+        <p>
+            <b>CAPTCHA</b> — це не просто дратівливі картинки, а потужний фільтр, який відсікає ботів. 
+            Головне завдання — надати завдання, яке є дуже простим для людини, але нездійсненним для алгоритму.
+        </p>
+    </div>
+    </div>
+        <hr class="section-divider">
+        
+    <div class="info-grid">
+        <div class="table-wrapper">
+            <table class="styled-table">
+            <caption><h2 style="color: #3C0008;">Хронологія розвитку та ключові події</h2></caption>
+                <thead>
+                    <tr>
+                        <th>Рік</th>
+                        <th>Подія</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>2000</td><td>Поява терміну CAPTCHA</td></tr>
+                    <tr><td>2003</td><td>Розпізнавання текстових кодів</td></tr>
+                    <tr><td>2009</td><td>Google купує reCAPTCHA</td></tr>
+                    <tr><td>2014</td><td>"No CAPTCHA" (галочка)</td></tr>
+                    <tr><td>2018</td><td>Вихід reCAPTCHA v3: невидима перевірка</td></tr>
+                    <tr><td>2023</td><td>GPT-4 розгадує складні тести</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="features-box">
+            <h3>Цікаві різновиди:</h3>
+                <ul>
+                    <li><b>Solve Media:</b> Рекламні фрази.</li>
+                    <li><b>Математична:</b> Розв’язання рівнянь.</li>
+                    <li><b>Звукова:</b> Для людей з вадами зору.</li>
+                    <li><b>Ігрова:</b> Складання пазлів.</li>
+                </ul>
+        </div>
+    </div>
+
+            <section class="captcha-demo-area">
+                <h2>Інтерактивна перевірка</h2>
+                <div class="captcha-card">
+                    <p>Оберіть лише <b>котиків (🐱)</b>, щоб довести, що ви людина:</p>
+                    <div class="captcha-grid" id="captchaGrid">
+                        <div class="tile" onclick="toggleTile(this)" data-type="cat">🐱</div>
+                        <div class="tile" onclick="toggleTile(this)" data-type="dog">🐶</div>
+                        <div class="tile" onclick="toggleTile(this)" data-type="cat">🐱</div>
+                        <div class="tile" onclick="toggleTile(this)" data-type="mouse">🐭</div>
+                        <div class="tile" onclick="toggleTile(this)" data-type="hamster">🐹</div>
+                        <div class="tile" onclick="toggleTile(this)" data-type="cat">🐱</div>
+                    </div>
+                    <button class="check-btn" onclick="verifyLogic()">Перевірити результат</button>
+                    <p id="result-msg"></p>
+                </div>
+            </section>
+    </main>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Лабораторна робота про CAPTCHA</p>
+            <p><b><a href="./labs.html">Лабораторні роботи по JavaScript</a></b></p>
+            <p>Автор: <a href="https://sonya777.carrd.co/"><b>Ковтун Софія</b></a> | Група: 1ЕХКБ-25Б</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function toggleTile(el) {
+            el.classList.toggle('selected');
+        }
+
+        function verifyLogic() {
+            const tiles = document.querySelectorAll('.tile');
+            const msg = document.getElementById('result-msg');
+            let isHuman = true;
+
+            tiles.forEach(tile => {
+                const isSelected = tile.classList.contains('selected');
+                const isCat = tile.getAttribute('data-type') === 'cat';
+                if (isSelected !== isCat) isHuman = false;
+            });
+
+            if (isHuman) {
+                msg.innerHTML = "✔️ Тест пройдено! Ви людина.";
+                msg.style.color = "#27ae60";
+            } else {
+                msg.innerHTML = "❌ Помилка! Спробуйте ще раз.";
+                msg.style.color = "#e74c3c";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
