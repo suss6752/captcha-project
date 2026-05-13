@@ -716,10 +716,14 @@ footer a{
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        position: relative;
+    }
     .container {
         padding: 20px;
         margin: 10px auto;
-        width: 95%;
+        width: 92%;
     }
     .intro-section, .info-grid, .footer-content, header {
         flex-direction: column;
@@ -728,15 +732,16 @@ footer a{
     .image-placeholder img { width: 100%; }
     .info-grid { grid-template-columns: 1fr; }
     .inner-hero {
-        margin: -20px -20px 20px -20px;
-        width: calc(100% + 40px);
+        margin: -20px 0 20px 0 !important;
+        width: 100% !important;
         min-height: 200px;
+        left: 0;
     }
     .hero-overlay {
         padding: 30px 20px;
     }
     .inner-hero-title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .types-grid {
         grid-template-columns: 1fr !important;
@@ -753,6 +758,10 @@ footer a{
     .menu {
         justify-content: center;
         padding: 0;
-        gap: 10px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .menu li button {
+        padding: 5px 10px;
     }
 }
