@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo1-removebg-preview (1).png" alt="Логотип"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                    <li><button><a href="index.html">Головна</a></button></li>
+                    <li><button><a href="./page01.html">Історія</a></button></li>
+                    <li><button><a href="./page02.html">Види капч</a></button></li>
+                    <li><button><a href="./page03.html">Цікаві факти</a></button></li>
+                    <!-- From Uiverse.io by Type-Delta --> 
+                    <label
+                    for="themeToggle"
+                    class="themeToggle st-sunMoonThemeToggleBtn"
+                    type="checkbox"
+                    >
+                    <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        stroke="none"
+                    >
+                        <mask id="moon-mask">
+                        <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                        <circle cx="11" cy="3" r="8" fill="black"></circle>
+                        </mask>
+                        <circle
+                        class="sunMoon"
+                        cx="10"
+                        cy="10"
+                        r="8"
+                        mask="url(#moon-mask)"
+                        ></circle>
+                        <g>
+                        <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                        <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                        <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                        <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                        </g>
+                    </svg>
+                    </label>
+
+                </ul>
+        </nav>
+</header>
+   <!--
+        <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+ 
+    <div class="mobile-menu">
+        <ul class="glmenu">
+            <li><a class="glmenu_items" href="index.html">Головна</a></li>
+            <li><a class="glmenu_items" href="page01.html">Історія</a></li>
+            <li><a class="glmenu_items" href="page02.html">Види капч</a></li>
+            <li><a class="glmenu_items" href="page03.html">Цікаві факти</a></li>
+        </ul>
+    </div>
+    -->
+    <div class="container">
+        <h1 class="main-title">Лабораторна робота №6</h1>
+
+        <section class="lab-task">
+            
+            <div class="flex-row">
+                <div class="flex-item mockup-box">
+                    <h4>1. Макет форми</h4>
+                    <img src="./images/labs.png" alt="Макет" class="img-responsive">
+                </div>
+
+                <div class="flex-item form-box">
+                    <h4>2. Реалізація</h4>
+                    <form id="v12Form">
+                        <fieldset>
+                            <legend class="legend-badge">Name</legend>
+                            <label>First Name</label><br>
+                            <input type="text" id="v12_fname"><br><br>
+                            <label>Last Name</label><br>
+                            <input type="text" id="v12_lname">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="legend-badge">Other Questions</legend>
+                            <p>Choose a drink:</p>
+                            <input type="radio" name="drink" value="coffee"> coffee<br>
+                            <input type="radio" name="drink" value="tea" checked> tea<br>
+                            <input type="radio" name="drink" value="hot chocolate"> hot chocolate
+
+                            <p>What ice cream do you like?</p>
+                            <input type="checkbox" name="ice" value="Chocolate"> Chocolate<br>
+                            <input type="checkbox" name="ice" value="Chocolate Pudding"> Chocolate Pudding<br>
+                            <input type="checkbox" name="ice" value="Chocolate Peanut Butter" checked> Chocolate Peanut Butter<br>
+                            <input type="checkbox" name="ice" value="Vanilla"> Vanilla<br>
+                            <input type="checkbox" name="ice" value="Strawberry"> Strawberry
+
+                            <p>Select a school:</p>
+                            <select id="v12_school">
+                                <option value="Harvard">Harvard</option>
+                                <option value="MIT">MIT</option>
+                                <option value="Oxford">Oxford</option>
+                            </select>
+
+                            <p>Please provide comments:</p>
+                            <textarea id="v12_comments" rows="3"></textarea>
+                        </fieldset>
+
+                        <div style="text-align: right; margin-top: 10px;">
+                            <button type="button" onclick="processVariant12()" class="btn-submit-v12">Sabmit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex-item report-box">
+                    <h4>3. Анкета-звіт</h4>
+                    <div id="v12_result_output">
+                        <p style="color: #999;">Тут з'явиться результат після натискання Sabmit...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="main-divider">
+
+        <section class="lab-task">
+            <h2>Завдання №1</h2>
+            <div class="condition-box">
+                <p>Варіант 12 (Задача 1): Написати функцію, яка отримує 4 цифри, а повертає ціле десяткове число. Наприклад, введено числа 3, 7, 5, 9, а отримане число – 3759. Використати цю функцію для формування числа з цифр, введених користувачем.</p>
+            </div>
+            <div class="controls">
+                <input type="number" id="num1" placeholder="3" class="input-val">
+                <input type="number" id="num2" placeholder="7" class="input-val">
+                <input type="number" id="num3" placeholder="5" class="input-val">
+                <input type="number" id="num4" placeholder="9" class="input-val">
+                <button type="button" onclick="calcLab1()" class="btn-dark-red">Сформувати</button>
+            </div>
+        </section>
+
+        
+        <section class="lab-task">
+            <h2>Завдання №2</h2>
+            <div class="condition-box">
+                <p>Варіант 12 (Задача 2): Реалізувати програму, яка перемножує відповідні елементи двох заданих матриць і заносить результат у третю матрицю.</p>
+            </div>
+            <div class="controls">
+                Рядки: <input type="number" id="mRows" value="2" class="input-val"> 
+                Стовпці: <input type="number" id="mCols" value="3" class="input-val">
+                Діапазон: <input type="number" id="mMin" value="1" class="input-val"> - 
+                <input type="number" id="mMax" value="10" class="input-val">
+                <button type="button" onclick="calcLab2()" class="btn-dark-red">Розрахувати матриці</button>
+            </div>
+        </section>
+
+        <section class="output-log-section">
+            <h3>ЖУРНАЛ ВИКОНАННЯ:</h3>
+            <div id="results-log" class="log-display"></div>
+            <button onclick="document.getElementById('results-log').innerHTML=''" class="btn-clear">Очистити журнал</button>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Лабораторна робота про CAPTCHA</p>
+            <p><b><a href="./labs.html">Лабораторні роботи по JavaScript</a></b></p>
+            <p>Автор: <a href="https://sonya777.carrd.co/"><b>Ковтун Софія</b></a> | Група: 1ЕХКБ-25Б</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/labs.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
